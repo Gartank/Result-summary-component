@@ -7,9 +7,13 @@
 
 	/* Primary */
 	--light-red: hsl(0, 100%, 67%);
+	--light-red-background: hsl(0, 100%, 67%, 0.10);
 	--orangey-yellow: hsl(39, 100%, 56%);
-	--green-teal: hsl(166, 100%, 37%);
-	--cobalt-blue: hsl(234, 85%, 45);
+	--orangey-yellow-background: hsl(39, 100%, 56%, 0.10);
+	--green-teal: hsla(166, 100%, 37%);
+	--green-teal-background: hsla(166, 100%, 37%, 0.10);
+	--cobalt-blue: hsl(234, 85%, 43%);
+	--cobalt-blue-background: hsl(234, 85%, 43%, 0.10);
 
 	/* Gradients */
 	--Light-slate-blue-background: hsl(252, 100%, 67%);
@@ -17,7 +21,7 @@
 
 	/* Circle */
 	--Violet-blue-circle: hsla(256, 72%, 46%, 1);
-	--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+	--persian-blue-circle: hsla(241, 72%, 46%, 0);
 
 	/* Neutral */
 	--White: hsl(0, 0%, 100%);
@@ -25,6 +29,178 @@
 	--Light-lavender: hsl(241, 100%, 89%);
 	--Dark-gray-blue: hsl(224, 30%, 27%);
 }
-.{
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 	
+	align-items: center;
+	justify-items: center;
+	justify-content: space-between;
+	
+	font-size: 14px;
+	background-color: var(--Pale-blue);
 }
+main{
+	height: 90vh;
+	
+	display: flex;
+	align-items: center;
+}
+.container__results{
+	width: 650px;
+	height: 430px;
+	border-radius: 20px;
+	
+	display: flex;
+	justify-content: space-around;
+
+	box-shadow: 10px 10px 20px var(--Light-lavender);
+}
+.results__card{
+	width: 50%;
+	padding: 10px 40px;
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	background: linear-gradient(0deg, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+}
+.results__title{
+	color: var(--Light-lavender);
+}
+.results__score{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+	text-align: center;
+
+	background: linear-gradient( var(--Violet-blue-circle), var(--persian-blue-circle));
+	color: var(--Light-lavender);
+}
+.score {
+	display: block;
+	color: var(--Pale-blue);
+	
+	font-size: 3.2em;
+	line-height: 50px;
+}
+.results__message{
+	
+	text-align: center;
+	color: var(--Light-lavender);
+}
+.results__greeting{
+	margin-bottom: 20px;
+	color: var(--Pale-blue);
+}
+.restults__description{
+	width: 200px;
+
+	font-weight: 500;
+}
+.results__summary{
+	width: 50%;
+	padding: 20px 30px;
+	border-radius: 0 20px 20px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: var(--White);
+}
+.summary__title{
+	color: var(--Dark-gray-blue);
+	text-justify: center;
+}
+.summary__stats{
+	width: 100%;
+	height: 80%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	font-weight: 700;
+}
+.summary__stat1{
+	color: var(--light-red);
+	background-color: var(--light-red-background);
+}
+.summary__stat2{
+	color: var(--orangey-yellow);
+	background-color: var(--orangey-yellow-background);
+}
+.summary__stat3{
+	color: var(--green-teal);
+	background-color: var(--green-teal-background);
+}
+.summary__stat4{
+	color: var(--cobalt-blue);
+	background-color: var(--cobalt-blue-background);
+}
+.summary__stat{
+	width: 100%;
+	height: fit-content;
+	padding: 10px;
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.stat__puntuation{
+	display:block;
+	width: fit-content;
+
+	color: var(--Light-lavender);
+}
+.stat__name{
+	display: flex;
+
+	align-items: center;
+	gap: 5px;
+}
+.stat__value{
+	color: var(--Dark-gray-blue);
+	font-weight: 800;
+}
+.stat__icon{
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	margin: 0 auto;
+}
+.summary__buttom--hover{
+	padding-block: 10px;
+	border: 0px;
+	border-radius: 20px;
+
+	
+	font-family: 'Hanken Grotesk', sans-serif;;
+	color: var(--Pale-blue);
+
+	background-color: var(--Dark-gray-blue);
+}
+.summary__buttom--hover:hover{ 
+	background-image: linear-gradient(0deg, var(--Light-royal-blue-background), var(--Light-slate-blue-background) 80%);
+	
+	cursor: pointer;
+}
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+	width: fit-content;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

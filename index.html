@@ -6,57 +6,65 @@
 
 	<link rel="stylesheet" href="./design/style.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-	
 
 	<title>Frontend Mentor | Results summary component</title>
-
-	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-	<style>
-	.attribution { font-size: 11px; text-align: center; }
-	.attribution a { color: hsl(228, 45%, 44%); }
-	</style>
 </head>
 <body>
-	<div class="container__results">
-		<h2 class="results__title">Your Result</h2>
-	<div class="results__score">
-		<span class="score">76</span>
-		of 100
-	</div>
-	<div class="results__message">
-		<h2 class="result__greeting">
-			Great
-		</h2>
-		<p class="restult__description">
-			You scored higher than 65% of the people who have taken these tests.
-		</p>
-			<div class="result__summary">
+	<main>
+
+		<div class="container__results">
+		<div class="results__card">
+			<h2 class="results__title">Your Result</h2>
+			<div class="results__score">
+				<span class="score">76</span>
+				of 100
+			</div>
+			<div class="results__message">
+				<h2 class="results__greeting">
+					Great
+				</h2>
+				<p class="restults__description">
+					You scored higher than 65% of the people who have taken these tests.
+				</p>
+			</div>
+		</div>
+			<div class="results__summary">
 				<h3 class="summary__title">Summary</h3>
 				<div class="summary__stats">
-					<div class="summary__value1">
-						Reaction
-						80 / 100
+					<div class="summary__stat summary__stat1">
+						<p class="stat__name stat__name1">
+							<img src="assets/images/icon-reaction.svg" class="stat__icon stat__icon1">Reaction
+						</p> 
+						<span class="stat__puntuation stat__puntuation1"><b class="stat__value stat__value1">80</b> / 100</span>
 					</div>
-					<div class="summary__value2">
-						Memory
-						92 / 100
+					<div class="summary__stat summary__stat2">
+						<p class="stat__name stat__name2">
+							<img src="assets/images/icon-memory.svg" class="stat__icon stat__icon2">Memory
+						</p> 
+						<span class="stat__puntuation stat__puntuation2"><b class="stat__value stat__value2">92</b> / 100</span>
 					</div>
-					<div class="summary__value3">
-						Verbal
-						61 / 100
+					<div class="summary__stat summary__stat3">
+						<p class="stat__name stat__name3">
+							<img src="assets/images/icon-verbal.svg" class="stat__icon stat__icon3">Verbal 
+						</p>
+						<span class="stat__puntuation stat__puntuation3"><b class="stat__value stat__value3">61</b> / 100</span>
 					</div>
-					<div class="summary__value4">
-						Visual
-						72 / 100
+					<div class="summary__stat summary__stat4">
+						<p class="stat__name stat__name4">
+							<img src="assets/images/icon-visual.svg" class="stat__icon stat__icon4">Visual
+						</p> 
+						<span class="stat__puntuation stat__puntuation4"><b class="stat__value stat__value4">72</b> / 100</span>
 					</div>
 				</div>
 				<button class="summary__buttom--hover" type="button">Continue</button>
 			</div>
 		</div>
-	</div>
-	<div class="attribution">
-		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Fred Urbina</a>.
-	</div>
+	</main>
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Fred Urbina</a>.
+		</div>
+	</footer>
 </body>
 </html>
