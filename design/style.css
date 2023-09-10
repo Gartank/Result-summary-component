@@ -39,7 +39,7 @@ body{
 	justify-content: space-between;
 	
 	font-size: 14px;
-	background-color: var(--Pale-blue);
+	background-color: var(--white);
 }
 main{
 	height: 90vh;
@@ -48,14 +48,14 @@ main{
 	align-items: center;
 }
 .container__results{
-	width: 650px;
+	width: 600px;
 	height: 430px;
 	border-radius: 20px;
 	
 	display: flex;
 	justify-content: space-around;
 
-	box-shadow: 10px 10px 20px var(--Light-lavender);
+	box-shadow: 10px 10px 20px 5px var(--Pale-blue);
 }
 .results__card{
 	width: 50%;
@@ -67,7 +67,7 @@ main{
 	align-items: center;
 	justify-content: space-around;
 
-	background: linear-gradient(0deg, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+	background: linear-gradient(0deg, var(--Light-royal-blue-background) 40%, var(--Light-slate-blue-background));
 }
 .results__title{
 	color: var(--Light-lavender);
@@ -91,9 +91,10 @@ main{
 .score {
 	display: block;
 	color: var(--Pale-blue);
-	
+
 	font-size: 3.2em;
 	line-height: 50px;
+	font-weight: 800;
 }
 .results__message{
 	
@@ -101,7 +102,7 @@ main{
 	color: var(--Light-lavender);
 }
 .results__greeting{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	color: var(--Pale-blue);
 }
 .restults__description{
@@ -110,7 +111,7 @@ main{
 	font-weight: 500;
 }
 .results__summary{
-	width: 50%;
+	width: 55%;
 	padding: 20px 30px;
 	border-radius: 0 20px 20px 0;
 
@@ -123,6 +124,7 @@ main{
 .summary__title{
 	color: var(--Dark-gray-blue);
 	text-justify: center;
+	font-weight: 800;
 }
 .summary__stats{
 	width: 100%;
@@ -159,12 +161,11 @@ main{
 	display: flex;
 	justify-content: space-between;
 }
-
 .stat__puntuation{
 	display:block;
 	width: fit-content;
 
-	color: var(--Light-lavender);
+	color: hsl(224, 30%, 27%, .60);
 }
 .stat__name{
 	display: flex;
@@ -194,7 +195,7 @@ main{
 	background-color: var(--Dark-gray-blue);
 }
 .summary__buttom--hover:hover{ 
-	background-image: linear-gradient(0deg, var(--Light-royal-blue-background), var(--Light-slate-blue-background) 80%);
+	background-image: linear-gradient(0deg, var(--Light-royal-blue-background) 40%, var(--Light-slate-blue-background) );
 	
 	cursor: pointer;
 }
