@@ -54,4 +54,4 @@ Something that I want to highlight, and made me learn a lot, was the style and t
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Gartank](https://www.frontendmentor.io/profile/Gartank)
